@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kermesse des Cossalter — 1er août</title>
+<meta name="description" content="La Kermesse des Cossalter, le 1er août à Lens-Lestang. Jeux, gages, roulette et surprises toute la journée et toute la nuit.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231B2A4A'/%3E%3Cpath d='M50 50 L50 4 A46 46 0 0 1 89.8 27 Z' fill='%23C8102E'/%3E%3Cpath d='M50 50 L89.8 27 A46 46 0 0 1 89.8 73 Z' fill='%23F2A93B'/%3E%3Cpath d='M50 50 L89.8 73 A46 46 0 0 1 50 96 Z' fill='%231F7A6C'/%3E%3Cpath d='M50 50 L50 96 A46 46 0 0 1 10.2 73 Z' fill='%23C8102E'/%3E%3Cpath d='M50 50 L10.2 73 A46 46 0 0 1 10.2 27 Z' fill='%23F2A93B'/%3E%3Cpath d='M50 50 L10.2 27 A46 46 0 0 1 50 4 Z' fill='%231F7A6C'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23FAF4E6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1B2A4A;
+    --cream:#F1E6D0;
+    --red:#C8102E;
+    --yellow:#F2A93B;
+    --teal:#1F7A6C;
+    --cocoa:#4A2E2A;
+    --cream-soft:#FAF4E6;
+    --shadow: 0 6px 0 rgba(74,46,42,0.18);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--cocoa);
+    font-family:'Work Sans', sans-serif;
+    line-height:1.5;
+  }
+  h1,h2,h3{
+    font-family:'Alfa Slab One', cursive;
+    line-height:1.1;
+    margin:0 0 .4em 0;
+    letter-spacing:.5px;
+  }
+  .mono{ font-family:'Space Mono', monospace; }
+  a{ color:inherit; }
+  .section{
+    max-width:1080px;
+    margin:0 auto;
+    padding:70px 24px;
+  }
+  .eyebrow{
+    font-family:'Space Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:.8rem;
+    color:var(--red);
+    font-weight:700;
+    margin-bottom:8px;
+    display:block;
+  }
+  .section h2{
+    font-size:clamp(1.8rem, 4vw, 2.6rem);
+    color:var(--navy);
+  }
+  .section > p.lead{
+    max-width:640px;
+    font-size:1.05rem;
+    color:var(--cocoa);
+    opacity:.85;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(rgba(255,255,255,0.05) 1.4px, transparent 1.4px) 0 0/24px 24px,
+      var(--navy);
+    color:var(--cream-soft);
+    padding:0 0 60px;
+    overflow:hidden;
+    text-align:center;
+  }
+  .bunting{
+    width:100%;
+    height:46px;
+    display:block;
+  }
+  
+  
+  .hero-inner{
+    max-width:760px;
+    margin:0 auto;
+    padding:20px 24px;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 7vw, 4.6rem);
+    color:var(--cream-soft);
+    text-shadow:4px 4px 0 var(--red);
+    margin-top:18px;
+  }
+  .hero .subtitle{
+    font-family:'Space Mono', monospace;
+    color:var(--yellow);
+    font-size:1rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:28px;
+  }
+  .ticket-stamp{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    row-gap:2px;
+    line-height:1.2;
+    background:var(--cream-soft);
+    color:var(--navy);
+    padding:8px 18px;
+    border-radius:100px;
+    border:3px dashed var(--red);
+    font-family:'Space Mono', monospace;
+    font-weight:700;
+    font-size:.9rem;
+    transform:rotate(-2deg);
+    box-shadow:var(--shadow);
+    flex-wrap:wrap;
+    justify-content:center;
+    max-width:90vw;
+  }
+  @media(max-width:420px){
+    .ticket-stamp{ font-size:.78rem; padding:7px 14px; gap:4px; }
+  }
+  .ticket-stamp .sep{ color:var(--red); }
+  .countdown{
+    margin-top:36px;
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .countdown .cd-box{
+    background:rgba(255,255,255,0.06);
+    border:2px solid var(--yellow);
+    border-radius:12px;
+    padding:14px 18px;
+    min-width:76px;
+  }
+  .countdown .cd-num{
+    font-family:'Space Mono', monospace;
+    font-size:1.8rem;
+    font-weight:700;
+    color:var(--yellow);
+    display:block;
+  }
+  .countdown .cd-label{
+    font-size:.7rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    opacity:.8;
+  }
+
+  /* ---------- PROGRAMME ---------- */
+  .programme-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    margin-top:36px;
+  }
+  @media(max-width:720px){ .programme-grid{ grid-template-columns:1fr; } }
+  .prog-card{
+    background:var(--cream-soft);
+    border-radius:18px;
+    padding:28px;
+    box-shadow:var(--shadow);
+    border-top:8px solid var(--teal);
+  }
+  .prog-card.evening{ border-top-color:var(--navy); }
+  .prog-card h3{
+    color:var(--navy);
+    font-size:1.3rem;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .prog-list{
+    list-style:none;
+    margin:16px 0 0;
+    padding:0;
+  }
+  .prog-list li{
+    display:flex;
+    gap:14px;
+    padding:10px 0;
+    border-bottom:1px dashed rgba(74,46,42,0.2);
+    font-size:.95rem;
+  }
+  .prog-list li:last-child{ border-bottom:none; }
+  .prog-time{
+    font-family:'Space Mono', monospace;
+    font-weight:700;
+    color:var(--red);
+    min-width:78px;
+  }
+  .prog-note{
+    margin-top:18px;
+    font-size:.88rem;
+    font-style:italic;
+    opacity:.75;
+  }
+
+  /* ---------- ACTIVITY CARDS ---------- */
+  .activities-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(210px,1fr));
+    gap:22px;
+    margin-top:36px;
+  }
+  .ticket{
+    position:relative;
+    background:var(--cream-soft);
+    border-radius:14px;
+    padding:26px 20px 22px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    border:2px solid rgba(74,46,42,0.12);
+  }
+  .ticket::before,.ticket::after{
+    content:"";
+    position:absolute;
+    width:22px; height:22px;
+    background:var(--cream);
+    border-radius:50%;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  .ticket::before{ left:-11px; }
+  .ticket::after{ right:-11px; }
+  .icon-badge{
+    width:64px; height:64px;
+    border-radius:50%;
+    background:var(--yellow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 14px;
+  }
+  .ticket.evening .icon-badge{ background:var(--teal); }
+  .icon-badge svg{ width:34px; height:34px; }
+  .ticket h4{
+    font-family:'Alfa Slab One', cursive;
+    font-size:1rem;
+    color:var(--navy);
+    margin:0 0 6px;
+  }
+  .ticket p{
+    font-size:.85rem;
+    margin:0;
+    opacity:.8;
+  }
+
+  /* ---------- STRIPE BANNER (séparateurs) ---------- */
+  .stripe-banner{
+    background: repeating-linear-gradient(135deg,
+      var(--red) 0 26px, var(--yellow) 26px 52px,
+      var(--teal) 52px 78px, var(--navy) 78px 104px);
+    padding:30px 24px;
+    text-align:center;
+  }
+  .stripe-banner h2{
+    display:inline-block;
+    background:var(--navy);
+    color:var(--cream-soft);
+    padding:12px 30px;
+    border-radius:10px;
+    font-size:clamp(1.3rem,3.4vw,1.9rem);
+    box-shadow:0 5px 0 rgba(0,0,0,0.2);
+  }
+
+  /* ---------- WHEEL BANNER ---------- */
+  .wheel-banner{
+    position:relative;
+    padding:90px 24px;
+    text-align:center;
+    overflow:hidden;
+    background:conic-gradient(
+      var(--red) 0deg 45deg, var(--yellow) 45deg 90deg,
+      var(--teal) 90deg 135deg, var(--red) 135deg 180deg,
+      var(--yellow) 180deg 225deg, var(--teal) 225deg 270deg,
+      var(--red) 270deg 315deg, var(--yellow) 315deg 360deg
+    );
+  }
+  .wheel-banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(27,42,74,0.72);
+  }
+  .wheel-banner .wheel-content{
+    position:relative;
+    z-index:1;
+  }
+  .wheel-banner h2{
+    color:var(--cream-soft);
+    font-size:clamp(1.5rem,4vw,2.2rem);
+  }
+  .wheel-banner p{
+    color:var(--yellow);
+    font-family:'Space Mono', monospace;
+    max-width:480px;
+    margin:10px auto 0;
+    font-size:.9rem;
+  }
+
+  /* ---------- EXTRAS ---------- */
+  .extras-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:24px;
+    margin-top:36px;
+  }
+  .extra-card{
+    background:var(--cream-soft);
+    border-radius:16px;
+    padding:24px;
+    box-shadow:var(--shadow);
+  }
+  .extra-card h3{
+    color:var(--red);
+    font-size:1.1rem;
+    margin-bottom:8px;
+  }
+  .extra-card p{ font-size:.9rem; margin:0; opacity:.85; }
+
+  /* ---------- PRACTICAL ---------- */
+  .practical{ background:var(--cream-soft); }
+  .practical-grid{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:32px;
+    margin-top:32px;
+  }
+  @media(max-width:800px){ .practical-grid{ grid-template-columns:1fr; } }
+  .info-card{
+    background:var(--cream);
+    border-radius:16px;
+    padding:22px;
+    margin-bottom:18px;
+  }
+  .info-card h4{
+    font-family:'Alfa Slab One', cursive;
+    color:var(--navy);
+    font-size:.95rem;
+    margin:0 0 10px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+  }
+  .weather-widget{
+    display:flex;
+    align-items:center;
+    gap:16px;
+  }
+  .weather-widget .temp{
+    font-family:'Space Mono', monospace;
+    font-size:2.2rem;
+    font-weight:700;
+    color:var(--navy);
+  }
+  .btn{
+    display:inline-block;
+    background:var(--red);
+    color:var(--cream-soft);
+    font-family:'Space Mono', monospace;
+    font-weight:700;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:100px;
+    border:none;
+    cursor:pointer;
+    font-size:.9rem;
+    transition:transform .15s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn.secondary{ background:var(--teal); }
+  .btn.ghost{ background:transparent; border:2px solid var(--navy); color:var(--navy); }
+
+  /* ---------- RSVP ---------- */
+  .rsvp-box{
+    background:var(--cream-soft);
+    border-radius:20px;
+    padding:34px;
+    box-shadow:var(--shadow);
+    margin-top:32px;
+  }
+  .form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-bottom:16px;
+  }
+  @media(max-width:600px){ .form-row{ grid-template-columns:1fr; } }
+  label{
+    font-size:.85rem;
+    font-weight:600;
+    display:block;
+    margin-bottom:6px;
+    color:var(--navy);
+  }
+  input[type="text"], input[type="tel"]{
+    width:100%;
+    padding:11px 14px;
+    border-radius:10px;
+    border:2px solid rgba(74,46,42,0.2);
+    font-family:'Work Sans', sans-serif;
+    font-size:.95rem;
+    background:#fff;
+  }
+  input[type="text"]:focus, input[type="tel"]:focus, input[type="checkbox"]:focus-visible{
+    outline:3px solid var(--yellow);
+    outline-offset:1px;
+  }
+  .field-hint{
+    font-size:.78rem;
+    font-weight:400;
+    opacity:.65;
+    display:inline;
+  }
+  .check-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:6px;
+  }
+  .check-row input{ width:18px; height:18px; }
+  .bring-item{ margin-bottom:14px; }
+  .bring-detail{ margin-top:8px; display:none; }
+  .bring-detail.show{ display:block; }
+  #rsvp-status{
+    margin-top:16px;
+    font-size:.9rem;
+    font-weight:600;
+  }
+  #rsvp-status.ok{ color:var(--teal); }
+  #rsvp-status.err{ color:var(--red); }
+  .confirmed-count{
+    margin-top:28px;
+    padding-top:20px;
+    border-top:2px dashed rgba(74,46,42,0.2);
+  }
+  .shopping-list{
+    list-style:none;
+    padding:0;
+    margin:14px 0 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:14px;
+  }
+  .shopping-list li{
+    background:var(--cream);
+    border-radius:12px;
+    padding:14px;
+    font-size:.88rem;
+  }
+  .shopping-list strong{ display:block; color:var(--navy); margin-bottom:6px; }
+
+  footer{
+    text-align:center;
+    padding:36px 24px;
+    background:
+      radial-gradient(rgba(255,255,255,0.05) 1.4px, transparent 1.4px) 0 0/24px 24px,
+      var(--navy);
+    color:var(--cream-soft);
+    font-family:'Space Mono', monospace;
+    font-size:.85rem;
+  }
+  footer a{ color:var(--yellow); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <svg class="bunting" viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <g>
+      <polygon points="0,0 30,0 15,44" fill="#C8102E"/>
+      <polygon points="30,0 60,0 45,44" fill="#F2A93B"/>
+      <polygon points="60,0 90,0 75,44" fill="#1F7A6C"/>
+      <polygon points="90,0 120,0 105,44" fill="#C8102E"/>
+      <polygon points="120,0 150,0 135,44" fill="#F2A93B"/>
+      <polygon points="150,0 180,0 165,44" fill="#1F7A6C"/>
+      <polygon points="180,0 210,0 195,44" fill="#C8102E"/>
+      <polygon points="210,0 240,0 225,44" fill="#F2A93B"/>
+      <polygon points="240,0 270,0 255,44" fill="#1F7A6C"/>
+      <polygon points="270,0 300,0 285,44" fill="#C8102E"/>
+      <polygon points="300,0 330,0 315,44" fill="#F2A93B"/>
+      <polygon points="330,0 360,0 345,44" fill="#1F7A6C"/>
+      <polygon points="360,0 390,0 375,44" fill="#C8102E"/>
+      <polygon points="390,0 420,0 405,44" fill="#F2A93B"/>
+      <polygon points="420,0 450,0 435,44" fill="#1F7A6C"/>
+      <polygon points="450,0 480,0 465,44" fill="#C8102E"/>
+      <polygon points="480,0 510,0 495,44" fill="#F2A93B"/>
+      <polygon points="510,0 540,0 525,44" fill="#1F7A6C"/>
+      <polygon points="540,0 570,0 555,44" fill="#C8102E"/>
+      <polygon points="570,0 600,0 585,44" fill="#F2A93B"/>
+      <polygon points="600,0 630,0 615,44" fill="#1F7A6C"/>
+      <polygon points="630,0 660,0 645,44" fill="#C8102E"/>
+      <polygon points="660,0 690,0 675,44" fill="#F2A93B"/>
+      <polygon points="690,0 720,0 705,44" fill="#1F7A6C"/>
+      <polygon points="720,0 750,0 735,44" fill="#C8102E"/>
+      <polygon points="750,0 780,0 765,44" fill="#F2A93B"/>
+      <polygon points="780,0 810,0 795,44" fill="#1F7A6C"/>
+      <polygon points="810,0 840,0 825,44" fill="#C8102E"/>
+      <polygon points="840,0 870,0 855,44" fill="#F2A93B"/>
+      <polygon points="870,0 900,0 885,44" fill="#1F7A6C"/>
+      <polygon points="900,0 930,0 915,44" fill="#C8102E"/>
+      <polygon points="930,0 960,0 945,44" fill="#F2A93B"/>
+      <polygon points="960,0 990,0 975,44" fill="#1F7A6C"/>
+      <polygon points="990,0 1020,0 1005,44" fill="#C8102E"/>
+      <polygon points="1020,0 1050,0 1035,44" fill="#F2A93B"/>
+      <polygon points="1050,0 1080,0 1065,44" fill="#1F7A6C"/>
+      <polygon points="1080,0 1110,0 1095,44" fill="#C8102E"/>
+      <polygon points="1110,0 1140,0 1125,44" fill="#F2A93B"/>
+      <polygon points="1140,0 1170,0 1155,44" fill="#1F7A6C"/>
+      <polygon points="1170,0 1200,0 1185,44" fill="#C8102E"/>
+    </g>
+  </svg>
+  <div class="bunting-mobile"></div>
+  <div class="hero-inner">
+    <span class="subtitle">Ouverture des portes de la fête</span>
+    <h1>Kermesse des Cossalter</h1>
+    <div class="ticket-stamp">
+      <span>🎪 1er août 2026</span>
+      <span class="sep">·</span>
+      <span>12h00</span>
+      <span class="sep">·</span>
+      <span>Lens-Lestang</span>
+    </div>
+    <div class="countdown" id="countdown">
+      <div class="cd-box"><span class="cd-num" id="cd-days">--</span><span class="cd-label">jours</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-hours">--</span><span class="cd-label">heures</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-mins">--</span><span class="cd-label">min</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-secs">--</span><span class="cd-label">sec</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PROGRAMME ================= -->
+<section class="section" id="programme">
+  <span class="eyebrow">Le programme</span>
+  <h2>Une journée de jeux, une nuit de folie</h2>
+  <p class="lead">Toute la journée, chaque activité se joue en affrontement. Perds, et la roue des gages t'attend.</p>
+  <div class="programme-grid">
+    <div class="prog-card">
+      <h3>☀️ Journée</h3>
+      <ul class="prog-list">
+        <li><span class="prog-time">12h00</span><span>Accueil et apéro de bienvenue</span></li>
+        <li><span class="prog-time">Libre</span><span>Affrontements sur les activités, roue des gages pour les perdants</span></li>
+        <li><span class="prog-time">Tous ensemble</span><span>Le grand relais glissant, en une seule fournée collective</span></li>
+      </ul>
+    </div>
+    <div class="prog-card evening">
+      <h3>🌙 Soirée</h3>
+      <ul class="prog-list">
+        <li><span class="prog-time">20h00</span><span>Apéro-dîner</span></li>
+        <li><span class="prog-time">21h30</span><span>Tournoi de bière pong</span></li>
+        <li><span class="prog-time">Après ça</span><span>Au feeling : cartes, société, blind test, Just Dance, feu de camp, ciné...</span></li>
+      </ul>
+      <p class="prog-note">Couchage possible sur place, à confirmer dans le formulaire plus bas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACTIVITÉS JOURNÉE ================= -->
+<div class="stripe-banner"><h2>Que les jeux commencent</h2></div>
+
+<section class="section" id="jour">
+  <span class="eyebrow">Stands du jour</span>
+  <h2>Activités de la journée</h2>
+  <div class="activities-grid">
+
+    <div class="ticket">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="4"/><circle cx="10" cy="10" r="1"/>
+          <line x1="14.5" y1="14.5" x2="21" y2="21"/><path d="M18 21 L21 21 L21 18" fill="none"/>
+        </svg>
+      </div>
+      <h4>Fléchette</h4>
+      <p>Vise juste, ou tourne la roue.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="7" cy="15" r="3.2"/><circle cx="16" cy="8" r="3.2"/><circle cx="17.5" cy="17.5" r="1.4"/>
+        </svg>
+      </div>
+      <h4>Pétanque</h4>
+      <p>Le plus proche du cochonnet gagne.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round">
+          <rect x="5" y="10" width="2.6" height="9"/><rect x="9" y="6" width="2.6" height="13"/>
+          <rect x="13" y="9" width="2.6" height="10"/><rect x="17" y="4" width="2.6" height="15"/>
+        </svg>
+      </div>
+      <h4>Molkky</h4>
+      <p>Fais tomber les bonnes quilles.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="12" cy="8" r="4"/><path d="M12 5.5l1.2 2.2h2.4l-2 1.6.8 2.3-2.4-1.5-2.4 1.5.8-2.3-2-1.6h2.4z" fill="#1B2A4A" stroke="none"/>
+          <path d="M3 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0" stroke-width="1.4"/>
+          <path d="M3 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0" stroke-width="1.4"/>
+        </svg>
+      </div>
+      <h4>Foot glissant</h4>
+      <p>But sur bâche savonneuse.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="11" cy="16" rx="7" ry="2" fill="none"/>
+          <path d="M4 12c2-1 3-3 5-3s2 2 4 2 3-2 5-1" />
+          <circle cx="18" cy="6" r="1.8"/>
+          <path d="M16.5 8.5c-1 .8-1.8 2-1.8 3" stroke-width="1.4"/>
+        </svg>
+      </div>
+      <h4>Relais glissant</h4>
+      <p>À plat ventre sur la bâche, tous ensemble.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="10" height="2.4" rx="1"/><path d="M13 12.2h4v2h-4z"/>
+          <path d="M17 12.2l3-2v6l-3-2z"/><path d="M6 13.4v3" />
+          <path d="M19.5 5.5l1.6 1.6M20.5 4.2l1.6 1.6" />
+        </svg>
+      </div>
+      <h4>Tir à la carabine</h4>
+      <p>Trois ratés, un shot.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="4" width="4" height="5" rx="0.5"/>
+          <rect x="5" y="9" width="4" height="5" rx="0.5"/><rect x="13" y="9" width="4" height="5" rx="0.5"/>
+          <circle cx="19" cy="6" r="1.6" fill="#1B2A4A" stroke="none"/>
+          <path d="M17.5 7.4l-3 5" stroke-dasharray="1.5 1.5"/>
+        </svg>
+      </div>
+      <h4>Chamboule-tout</h4>
+      <p>Renverse la pyramide de boîtes.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= BANNIÈRE ROUE ================= -->
+<div class="wheel-banner">
+  <div class="wheel-content">
+    <h2>Perdu ? La roue t'attend.</h2>
+    <p>Ce qu'il y a dessus reste une surprise jusqu'au 1er août.</p>
+  </div>
+</div>
+
+<!-- ================= ACTIVITÉS SOIRÉE ================= -->
+<section class="section" id="soir">
+  <span class="eyebrow">Au programme ce soir</span>
+  <h2>Activités de la soirée</h2>
+  <p class="lead">Deux rendez-vous fixes, puis on enchaîne au feeling du groupe.</p>
+  <div class="activities-grid">
+
+    <div class="ticket evening">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="6" width="9" height="13" rx="1.4" transform="rotate(-10 8.5 12.5)"/>
+          <rect x="11" y="6" width="9" height="13" rx="1.4" transform="rotate(10 15.5 12.5)"/>
+        </svg>
+      </div>
+      <h4>Jeux de cartes</h4>
+      <p>On improvise sur place.</p>
+    </div>
+
+    <div class="ticket evening">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="4" width="12" height="12" rx="2.5"/>
+          <circle cx="7.5" cy="7.5" r="1" fill="#1B2A4A" stroke="none"/>
+          <circle cx="12.5" cy="12.5" r="1" fill="#1B2A4A" stroke="none"/>
+          <circle cx="7.5" cy="12.5" r="1" fill="#1B2A4A" stroke="none"/>
+          <circle cx="12.5" cy="7.5" r="1" fill="#1B2A4A" stroke="none"/>
+          <path d="M17 9c2 0 3.5 1.6 3.5 3.5S19 16 17 16" />
+        </svg>
+      </div>
+      <h4>Jeux de société</h4>
+      <p>Surprise du soir.</p>
+    </div>
+
+    <div class="ticket evening">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="3" width="6" height="9" rx="3"/>
+          <path d="M6 11a6 6 0 0 0 12 0" />
+          <line x1="12" y1="17" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/>
+        </svg>
+      </div>
+      <h4>Blind test / Karaoké</h4>
+      <p>Attention aux oreilles.</p>
+    </div>
+
+    <div class="ticket evening">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="5" r="2"/>
+          <path d="M12 7v6M12 13l-4 6M12 13l5 5M8 10l4 1 5-3"/>
+        </svg>
+      </div>
+      <h4>Just Dance</h4>
+      <p>Chauffe la piste.</p>
+    </div>
+
+    <div class="ticket evening">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="6" width="14" height="9" rx="1"/>
+          <line x1="6" y1="18" x2="14" y2="18"/>
+          <path d="M17 8l4-2.5v9L17 12" />
+        </svg>
+      </div>
+      <h4>Cinéma en plein air</h4>
+      <p>Écran, transats, et la nuit qui tombe.</p>
+    </div>
+
+    <div class="ticket evening">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 10l1 8h6l1-8z"/><ellipse cx="12" cy="10" rx="4" ry="1.4"/>
+          <path d="M9.5 4.5l1.2 2.2h2.6l1.2-2.2" />
+          <path d="M10.5 3.2l.7 1.3h1.6l.7-1.3" />
+        </svg>
+      </div>
+      <h4>Tournoi de bière pong</h4>
+      <p>20h30, le rendez-vous fixe de la soirée.</p>
+    </div>
+
+    <div class="ticket evening">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3c1 3-1.5 3.5-1 6 .3-1 1.2-1.3 1.2-1.3s1 1.6 0 3.1c1.8-.6 2.8-2.2 2.5-4C15.5 9 17 11 16 14c1.6-.7 2.5-2.6 2-4.5C19 12 18 15 15 16.5c-2 1-4.6 1-6.4-.3C6.8 15 6 13 6.5 11c.5 1 1.4 1.4 1.4 1.4C6.7 10 7.8 7.6 9.2 6.6c-.2 1.3.4 2 .4 2C8.8 6.8 10.4 4.6 12 3z" fill="#1B2A4A" stroke="none"/>
+        </svg>
+      </div>
+      <h4>Feu de camp</h4>
+      <p>Anecdotes et souvenirs, tard dans la nuit.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= EXTRAS ================= -->
+<div class="stripe-banner"><h2>Et ce n'est pas fini</h2></div>
+
+<section class="section" id="extras">
+  <span class="eyebrow">Et aussi</span>
+  <h2>Les à-côtés</h2>
+  <div class="extras-grid">
+    <div class="extra-card">
+      <h3>🍹 Le Cocos</h3>
+      <p>Le cocktail signature de la kermesse. Libre à chacun de se faire le sien aussi.</p>
+    </div>
+    <div class="extra-card">
+      <h3>📸 Photobooth</h3>
+      <p>Un fond, quelques accessoires, et des appareils jetables qui traînent pour immortaliser les meilleurs moments (et les pires gages).</p>
+    </div>
+    <div class="extra-card">
+      <h3>🎟️ Tombola</h3>
+      <p>Une participation à l'entrée, et un ticket bonus à chaque activité gagnée dans la journée. Plus tu joues, plus tu tentes ta chance.</p>
+    </div>
+    <div class="extra-card">
+      <h3>🌿 Coin chill</h3>
+      <p>Un espace pour souffler entre deux activités, loin du bruit.</p>
+    </div>
+    <div class="extra-card">
+      <h3>🔫 Pistolets à eau</h3>
+      <p>Prévus pour se rafraîchir entre deux stands, sans prévenir personne.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFOS PRATIQUES ================= -->
+<section class="section practical" id="infos">
+  <span class="eyebrow">Infos pratiques</span>
+  <h2>Ce qu'il faut savoir</h2>
+  <div class="practical-grid">
+    <div>
+      <div class="info-card">
+        <h4>📍 Lieu</h4>
+        <p>Lens-Lestang, Drôme. L'adresse précise sera donnée directement aux personnes confirmées.</p>
+      </div>
+      <div class="info-card">
+        <h4>⛺ Couchage</h4>
+        <p>Possible sur place (tente ou autre selon la place). Merci de préciser dans le formulaire pour qu'on puisse s'organiser.</p>
+      </div>
+      <div class="info-card">
+        <h4>🎵 Playlist collaborative</h4>
+        <p>Ajoute tes sons pour la soirée directement sur la playlist Spotify partagée.</p>
+        <a class="btn secondary" href="#" id="playlist-link" style="margin-top:10px;">Ouvrir la playlist</a>
+      </div>
+      <div class="info-card">
+        <h4>📬 Contact</h4>
+        <p>Une question ? Écris à Etienne Cossalter.</p>
+        <a class="btn ghost" href="https://instagram.com/etienne_clt" target="_blank" rel="noopener" style="margin-top:10px;">@etienne_clt</a>
+      </div>
+    </div>
+    <div>
+      <div class="info-card">
+        <h4>☀️ Météo à Lens-Lestang</h4>
+        <div class="weather-widget" id="weather-widget">
+          <span class="temp" id="weather-temp">--°</span>
+          <div>
+            <div id="weather-desc">Chargement...</div>
+            <div class="mono" id="weather-updated" style="font-size:.75rem; opacity:.6;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RSVP ================= -->
+<section class="section" id="rsvp">
+  <span class="eyebrow">On compte sur toi</span>
+  <h2>Je confirme ma venue</h2>
+  <p class="lead">Dis-nous qui tu es, si tu restes dormir, et ce que tu ramènes — ça évite d'avoir 8 packs de bière et aucun dessert. Etienne valide chaque venue avant de l'ajouter à la liste.</p>
+
+  <div class="rsvp-box">
+    <form id="rsvp-form">
+      <div class="form-row">
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" required>
+        </div>
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" required>
+        </div>
+      </div>
+
+      <div style="margin-bottom:16px;">
+        <label for="telephone">Numéro de téléphone <span class="field-hint">(pour t'ajouter au groupe WhatsApp où seront invités les confirmés)</span></label>
+        <input type="tel" id="telephone" required>
+      </div>
+
+      <div class="check-row">
+        <input type="checkbox" id="couchage">
+        <label for="couchage" style="margin:0;">Je reste dormir sur place</label>
+      </div>
+
+      <div style="margin-top:24px;">
+        <label style="margin-bottom:12px;">Je ramène quelque chose :</label>
+
+        <div class="bring-item">
+          <div class="check-row">
+            <input type="checkbox" class="bring-check" data-cat="alcool" id="cat-alcool">
+            <label for="cat-alcool" style="margin:0;">🍺 Alcool</label>
+          </div>
+          <input type="text" class="bring-detail" id="detail-alcool" placeholder="Précise ce que tu apportes">
+        </div>
+
+        <div class="bring-item">
+          <div class="check-row">
+            <input type="checkbox" class="bring-check" data-cat="soft" id="cat-soft">
+            <label for="cat-soft" style="margin:0;">🥤 Soft</label>
+          </div>
+          <input type="text" class="bring-detail" id="detail-soft" placeholder="Précise ce que tu apportes">
+        </div>
+
+        <div class="bring-item">
+          <div class="check-row">
+            <input type="checkbox" class="bring-check" data-cat="nourriture" id="cat-nourriture">
+            <label for="cat-nourriture" style="margin:0;">🍖 Nourriture</label>
+          </div>
+          <input type="text" class="bring-detail" id="detail-nourriture" placeholder="Précise ce que tu apportes">
+        </div>
+
+        <div class="bring-item">
+          <div class="check-row">
+            <input type="checkbox" class="bring-check" data-cat="gateau" id="cat-gateau">
+            <label for="cat-gateau" style="margin:0;">🍰 Gâteau / dessert</label>
+          </div>
+          <input type="text" class="bring-detail" id="detail-gateau" placeholder="Précise ce que tu apportes">
+        </div>
+
+        <div class="bring-item">
+          <div class="check-row">
+            <input type="checkbox" class="bring-check" data-cat="autre" id="cat-autre">
+            <label for="cat-autre" style="margin:0;">🎒 Autre</label>
+          </div>
+          <input type="text" class="bring-detail" id="detail-autre" placeholder="Précise ce que tu apportes">
+        </div>
+      </div>
+
+      <button type="submit" class="btn" style="margin-top:10px;">Je confirme</button>
+      <div id="rsvp-status"></div>
+    </form>
+
+    <div class="confirmed-count">
+      <strong id="confirmed-count-text">Chargement des confirmations...</strong>
+      <ul class="shopping-list" id="shopping-list"></ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Kermesse des Cossalter · 1er août 2026 · Lens-Lestang<br>
+  Une question ? <a href="https://instagram.com/etienne_clt" target="_blank" rel="noopener">@etienne_clt</a>
+</footer>
+
+<script>
+  // ---------- COUNTDOWN ----------
+  const eventDate = new Date("2026-08-01T12:00:00+02:00").getTime();
+  function updateCountdown(){
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+    if(diff <= 0){
+      document.getElementById('countdown').innerHTML = '<div class="cd-box"><span class="cd-num">🎉</span><span class="cd-label">C\'est le jour J</span></div>';
+      return;
+    }
+    const days = Math.floor(diff/(1000*60*60*24));
+    const hours = Math.floor((diff/(1000*60*60))%24);
+    const mins = Math.floor((diff/(1000*60))%60);
+    const secs = Math.floor((diff/1000)%60);
+    document.getElementById('cd-days').textContent = days;
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // ---------- WEATHER (Open-Meteo, gratuit, sans clé) ----------
+  async function loadWeather(){
+    const lat = 45.293, lon = 5.043;
+    try{
+      const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FParis&forecast_days=16`);
+      const data = await res.json();
+      const codeMap = {
+        0:"Ciel dégagé",1:"Plutôt dégagé",2:"Partiellement nuageux",3:"Couvert",
+        45:"Brouillard",48:"Brouillard givrant",51:"Bruine légère",53:"Bruine",55:"Bruine forte",
+        61:"Pluie légère",63:"Pluie",65:"Pluie forte",71:"Neige légère",73:"Neige",75:"Neige forte",
+        80:"Averses",81:"Averses fortes",82:"Averses violentes",95:"Orage",96:"Orage avec grêle",99:"Orage violent"
+      };
+      const eventDay = "2026-08-01";
+      const idx = data.daily && data.daily.time ? data.daily.time.indexOf(eventDay) : -1;
+
+      if(idx !== -1){
+        const code = data.daily.weather_code[idx];
+        const tmax = Math.round(data.daily.temperature_2m_max[idx]);
+        const tmin = Math.round(data.daily.temperature_2m_min[idx]);
+        document.getElementById('weather-temp').textContent = tmax + "°";
+        document.getElementById('weather-desc').textContent = (codeMap[code] || "Prévision") + ` (min ${tmin}°)`;
+        document.getElementById('weather-updated').textContent = "Prévision pour le 1er août";
+      } else {
+        const t = Math.round(data.current.temperature_2m);
+        const code = data.current.weather_code;
+        document.getElementById('weather-temp').textContent = t + "°";
+        document.getElementById('weather-desc').textContent = (codeMap[code] || "Conditions actuelles") + " à Lens-Lestang aujourd'hui";
+        document.getElementById('weather-updated').textContent = "Prévision du 1er août dispo à J-16";
+      }
+    } catch(e){
+      document.getElementById('weather-desc').textContent = "Météo indisponible pour le moment";
+    }
+  }
+  loadWeather();
+
+  // ---------- BRING CHECKBOXES ----------
+  document.querySelectorAll('.bring-check').forEach(chk => {
+    chk.addEventListener('change', () => {
+      const detail = document.getElementById('detail-' + chk.dataset.cat);
+      detail.classList.toggle('show', chk.checked);
+      if(!chk.checked) detail.value = '';
+    });
+  });
+
+  // ---------- RSVP SUBMIT ----------
+  const GAS_URL = "https://script.google.com/macros/s/AKfycbzLxxKKoRqDQat-Gbc4o0TahmF1Emm4YdFov1jeE_YGivkc3KsqYOv_h8PJ7dM2iDvDiA/exec";
+
+  const rsvpForm = document.getElementById('rsvp-form');
+  const statusEl = document.getElementById('rsvp-status');
+
+  rsvpForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const prenom = document.getElementById('prenom').value.trim();
+    const nom = document.getElementById('nom').value.trim();
+    const telephone = document.getElementById('telephone').value.trim();
+    const couchage = document.getElementById('couchage').checked;
+
+    const apporte = {};
+    document.querySelectorAll('.bring-check').forEach(chk => {
+      if(chk.checked){
+        const detail = document.getElementById('detail-' + chk.dataset.cat).value.trim();
+        apporte[chk.dataset.cat] = detail || "oui";
+      }
+    });
+
+    const payload = { prenom, nom, telephone, couchage, apporte, date: new Date().toISOString() };
+
+    if(GAS_URL.includes("REMPLACE_MOI")){
+      statusEl.textContent = "Formulaire pas encore connecté au registre — configure GAS_URL dans le code.";
+      statusEl.className = "err";
+      return;
+    }
+
+    statusEl.textContent = "Envoi en cours...";
+    statusEl.className = "";
+
+    try{
+      await fetch(GAS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {"Content-Type":"text/plain"},
+        body: JSON.stringify(payload)
+      });
+      statusEl.textContent = "C'est noté, merci " + prenom + " ! Etienne validera ta venue avant de l'ajouter à la liste.";
+      statusEl.className = "ok";
+      rsvpForm.reset();
+      document.querySelectorAll('.bring-detail').forEach(d => d.classList.remove('show'));
+      loadConfirmed();
+    } catch(err){
+      statusEl.textContent = "Erreur d'envoi, réessaie dans un instant.";
+      statusEl.className = "err";
+    }
+  });
+
+  // ---------- LISTE DES CONFIRMÉS (lecture) ----------
+  async function loadConfirmed(){
+    const countEl = document.getElementById('confirmed-count-text');
+    const listEl = document.getElementById('shopping-list');
+    if(GAS_URL.includes("REMPLACE_MOI")){
+      countEl.textContent = "Liste des confirmations disponible une fois le registre connecté.";
+      return;
+    }
+    try{
+      const res = await fetch(GAS_URL);
+      const data = await res.json();
+      const entries = data.entries || [];
+      countEl.textContent = entries.length + " personne(s) validée(s)";
+
+      const byCat = { alcool: [], soft: [], nourriture: [], gateau: [], autre: [] };
+      entries.forEach(e => {
+        if(e.apporte){
+          Object.keys(e.apporte).forEach(cat => {
+            if(byCat[cat]) byCat[cat].push(`${e.prenom} — ${e.apporte[cat]}`);
+          });
+        }
+      });
+      const labels = { alcool:"🍺 Alcool", soft:"🥤 Soft", nourriture:"🍖 Nourriture", gateau:"🍰 Gâteau", autre:"🎒 Autre" };
+      listEl.innerHTML = '';
+      Object.keys(byCat).forEach(cat => {
+        if(byCat[cat].length){
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${labels[cat]}</strong>` + byCat[cat].join('<br>');
+          listEl.appendChild(li);
+        }
+      });
+    } catch(err){
+      countEl.textContent = "Impossible de charger les confirmations pour le moment.";
+    }
+  }
+  loadConfirmed();
+</script>
+
+</body>
+</html>
